@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import 'boxicons/css/boxicons.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+@theme {
+  --color-primary: #0b0b0f;
+  --color-brand-green: #013820;  /* Your Button Color */
+  --color-brand-mocha: #695445;  /* Your Accent Color */
+  --color-brand-linen: #b5a79c;  /* Your True Text Color */
+  
+  --font-sans: 'Montserrat', sans-serif;
+}
+
+@keyframes loading {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0b0b0f;
+}
+
+body {
+  background-color: #0b0b0f;
+  color: #b5a79c !important; /* Force global text to your exact Linen color #b5a79c */
+  font-family: var(--font-sans);
+  font-weight: 100;
+  overflow-x: hidden;
+}
+
+/* Eliminate any potential clipping or masking bugs on selections */
+::selection {
+  background-color: #695445;
+  color: #0b0b0f;
+}
